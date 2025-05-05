@@ -49,7 +49,7 @@ const handleImageGeneration = (e) => {
 
   const promptInput = document.querySelector('.prompt-input');
   const imgQuantity = document.querySelector('.img-quantity').value;
-  const prompt = promptInput.value;
+  const prompt = promptInput.value.trim();
 
   if (!prompt) return alert('Please enter a prompt.');
 
